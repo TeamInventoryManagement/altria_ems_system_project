@@ -54,7 +54,7 @@ const LaptopDetails = () => {
         }
 
         try {
-            const response = await fetch(`http://localhost:3000/api/laptop/${searchAssetId}`);
+            const response = await fetch(`https://altriaassestwebapp-e8gbbbdyc8ghhzdf.southeastasia-01.azurewebsites.net/api/laptop/${searchAssetId}`);
             if (!response.ok) {
                 const contentType = response.headers.get("content-type");
                 if (contentType && contentType.includes("text/html")) {
@@ -115,7 +115,7 @@ const LaptopDetails = () => {
         e.preventDefault();
         try {
             console.log('check :', formData);
-            const response = await fetch('http://localhost:3000/api/LaptopDetails', {
+            const response = await fetch('https://altriaassestwebapp-e8gbbbdyc8ghhzdf.southeastasia-01.azurewebsites.net/api/LaptopDetails', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)

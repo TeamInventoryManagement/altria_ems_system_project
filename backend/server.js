@@ -9,7 +9,7 @@ const app = express();
 
 // CORS options to allow requests from frontend running on port 5500
 const corsOptions = {
-    origin: 'http://localhost:8080', // Allow only requests from this origin
+    origin: 'https://altriaassestwebapp-e8gbbbdyc8ghhzdf.southeastasia-01.azurewebsites.net', // Allow only requests from this origin
     methods: 'GET,POST', // Allow only these methods
     allowedHeaders: ['Content-Type', 'Authorization'] // Allow only these headers
 };
