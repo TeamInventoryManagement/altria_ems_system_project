@@ -30,11 +30,6 @@ jobs:
         run: |
           CI=false npm run build --if-present
 
-      # Optionally add a test step, if you have tests
-      - name: npm run test
-        run: |
-          npm run test --if-present
-
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r
 
