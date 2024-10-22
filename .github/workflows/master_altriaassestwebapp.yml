@@ -60,6 +60,5 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'altriaassestwebapp'
-          slot-name: 'Production'
           package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_483253FAEA7A4C2093CA92E6992D0064 }}
