@@ -1,0 +1,16 @@
+
+ujavascript:S3776-"TRefactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.(ß¦²Ñúÿÿÿÿ
+wjavascript:S65829"[Prefer using an optional chain expression instead, as it's more concise and easier to read.(åÆº™
+Wjavascript:S1481ã"5Remove the declaration of the unused 'data' variable.(¿¤È²şÿÿÿÿ
+Tjavascript:S1854ã"2Remove this useless assignment to variable "data".(¿¤È²şÿÿÿÿ
+Ljavascript:S6853‘"/A form label must be associated with a control.(­¡›
+Qjavascript:S6853›"/A form label must be associated with a control.(ŒÚëÊùÿÿÿÿ
+Ljavascript:S6853¢"/A form label must be associated with a control.(‡©Æø
+Qjavascript:S6853¦"/A form label must be associated with a control.(ÑÊá©şÿÿÿÿ
+Kjavascript:S6853­"/A form label must be associated with a control.(õôèN
+Qjavascript:S6853²"/A form label must be associated with a control.( í¹üÿÿÿÿ
+Qjavascript:S6853»"/A form label must be associated with a control.(ËÈÿÂøÿÿÿÿ
+Ljavascript:S6853¿"/A form label must be associated with a control.(ÌŞíä
+Qjavascript:S6853Æ"/A form label must be associated with a control.(ô¸Û–øÿÿÿÿ
+Ljavascript:S6853Ê"/A form label must be associated with a control.(€µ½ı
+Qjavascript:S6853Ñ"/A form label must be associated with a control.(ñóâØøÿÿÿÿ

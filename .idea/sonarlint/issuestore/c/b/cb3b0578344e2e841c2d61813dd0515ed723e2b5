@@ -1,0 +1,5 @@
+
+–javascript:S3776"TRefactor this function to reduce its Cognitive Complexity from 16 to the 15 allowed.(æËŞÔJ$65abc4d0-81f2-456f-9da4-371393588035
+javascript:S6754":useState call is not destructured into value + setter pair(Ø¦¤ëùÿÿÿÿJ$b6617862-40c0-4d05-aabd-c0a9b5b55ee3
+Šjavascript:S6848"ÂAvoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.(´¡ğîüÿÿÿÿJ$9d88f7f1-a2f9-433a-bb85-a6ec72c98af0
+¦javascript:S1082"_Visible, non-interactive elements with click handlers must have at least one keyboard listener.(´¡ğîüÿÿÿÿJ$4f0e5a7d-b79e-4dfc-bb97-5036977dcc5e

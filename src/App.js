@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Outlet, useLocation } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
 import './App.css';
 
 function App() {
+  const location = useLocation();
+
+  // Define paths where the sidebar should not be displayed
+  const noSidebarPaths = ['/', '/loginpage']; // Add your landing page and other routes where sidebar shouldn't appear
+
+  // Check if the current path is in the noSidebarPaths list
+  const hideSidebar = noSidebarPaths.includes(location.pathname.toLowerCase());
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ display: 'flex' }}>
+      {!hideSidebar && <Sidebar />}
+      <div style={{ flex: 1, padding: hideSidebar ? '0' : '20px' }}>
+        <Outlet />
+      </div>
     </div>
   );
 }
