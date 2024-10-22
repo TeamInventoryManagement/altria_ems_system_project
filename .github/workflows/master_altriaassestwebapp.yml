@@ -21,14 +21,11 @@ jobs:
         with:
           node-version: '20.x'
 
-      - name: npm install
+      - name: npm install, build, and test
         run: |
           npm install
-
-      # Add the build step if your app has a build process (e.g. for React)
-      - name: npm run build
-        run: |
-          CI=false npm run build --if-present
+          npm run build --if-present
+          npm run test --if-present
 
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r
@@ -54,7 +51,7 @@ jobs:
 
       - name: Unzip artifact for deployment
         run: unzip release.zip
-
+      
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
@@ -62,4 +59,4 @@ jobs:
           app-name: 'altriaassestwebapp'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_483253FAEA7A4C2093CA92E6992D0064 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_977A674FCD884402BEDCC37F79D3E478 }}
